@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin:true
+    origin:true,
     credentials: true,
     methods: ['GET', 'PUT', 'POST', 'DELETE'],
     allowedHeaders: ['Content-Type']
