@@ -7,13 +7,16 @@ import cors from 'cors';
 const app = express();
 
 app.use(express.json());
+
 app.use(
   cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://book-store-mern-inky.vercel.app',
+    credentials: true,
     methods: ['GET', 'PUT', 'POST', 'DELETE'],
     allowedHeaders: ['Content-Type']
   })
 );
+
 app.use('/books', bookRouter);
 
 mongoose
