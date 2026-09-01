@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: 'https://book-store-mern-inky.vercel.app',
+    origin: 'https://book-store-mern-developerfaiza.vercel.app',
     credentials: true,
     methods: ['GET', 'PUT', 'POST', 'DELETE'],
     allowedHeaders: ['Content-Type']
